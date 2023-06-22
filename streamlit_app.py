@@ -6,7 +6,7 @@ streamlit.title('Breakfast Menu')
 streamlit.title('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.title('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.title('🐔 Hard-Boiled Free-Range Egg')
-streamlit.title('🥑 Avacado Toast')
+streamlit.title('🥑 Avocado Toast')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 
@@ -15,7 +15,7 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # Let's put a pick list here so they can pick the fruit they want to include 
-streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avacado', 'Strawberries'])
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberries'])
 
 # Display the table on the page
 streamlit.dataframe(my_fruit_list)
